@@ -1,0 +1,42 @@
+# Documentation: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
+# Syntax: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
+
+name: Sup Ticket
+description: Ticket to be handled during a Beetles week
+title: ""
+labels: ["need-triage"]
+type: Sup
+assignees:
+  - fgerthoffert
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    attributes:
+      label: Context / Problem
+      description: A description of the problem for which you need assistance.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Versions used
+      description: The list of the versions used (Jahia, modules, jCustomer, Elasticsearch, ...).
+      placeholder: |
+        1. In this environment...
+        2. With this config...
+        3. Run '...'
+        14. See error...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: Any extra detailed to understand and reproduce the issue
+      placeholder: |
+        - environment used (docker, installer, browser version)
+        - logs (server-side, browser) & stack trace
+        - screenshots/videos
+    validations:
+      required: true
