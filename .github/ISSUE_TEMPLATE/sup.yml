@@ -35,8 +35,8 @@ body:
       label: Additional information
       description: Any extra detailed to understand and reproduce the issue
       placeholder: |
-        - environment used (docker, installer, browser version)
-        - logs (server-side, browser) & stack trace
-        - screenshots/videos
+        * environment used (docker, installer, browser version)
+        * logs (server-side, browser) & stack trace
+        * screenshots/videos
     validations:
       required: true
